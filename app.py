@@ -10,7 +10,7 @@ from logic.transforms import (
     describe_selection,
 )
 from ui.components import render_line_chart, render_metric_cards, render_sidebar_filters
-from ui.layouts import configure_page, render_header
+from ui.layouts import configure_page, render_footer, render_header
 
 
 def main() -> None:
@@ -50,6 +50,8 @@ def main() -> None:
         description=descriptions["comparison"],
         y_axis_title="Index (start year = 100)",
     )
+
+    render_footer()
 
 
 if __name__ == "__main__":
